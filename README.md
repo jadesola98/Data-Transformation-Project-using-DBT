@@ -4,6 +4,8 @@
 In this project I explored DBT in other to understand the nitty gritty and features of dbt. I setup my cloud data platform - snowflake, installed dbt using pip, performed basic transformation in the staging database and modelled a few tables in the warehouse.
 
 
+
+
 ## Tools
 * snowflake
 * DBT 
@@ -11,30 +13,19 @@ In this project I explored DBT in other to understand the nitty gritty and featu
 
 
 
-1. setup snowflake environment
-created roles, databases, datawarehouse and granted necessary permissions. the query used can be found in full_script.sql
-databases created were:
-databases:
-RAW_DEV
-ANALYTICS_DEV
-RAW
-ANALYTICS
-
-schemas:
-RAW.AVENGERS
-RAW.FANDANGO
-RAW_DEV.AVENGERS
-RAW_DEV.FANDANGO
-
+## setup snowflake environment
+1. created roles, databases, schemas, datawarehouse and granted necessary permissions. The query used can be found in full_script.sql
 
 2. ingested data into the raw database
 the data ingested was hardcoded. the query used can be found in full_script.sql
 
 3. installed dbt
-created a folder for the project
+* created a folder for the project
 
-created a virtual environment for my dbt project
-python -m venv dbt-env     
+* created a virtual environment for my dbt project
+```bash
+python -m venv dbt-env
+```     
 
 activated the environment        
 dbt-env/scripts/activate       
