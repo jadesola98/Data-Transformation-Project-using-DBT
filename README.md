@@ -31,14 +31,18 @@ python -m venv dbt-env
 dbt-env/scripts/activate
 ```
 * installed dbt
+
 N.B: I used the snowflake adapter because I am working with snowflake database
+
 ```bash
 pip install dbt-snowflake
 ```
 * Initialized dbt project
+
 created a new folder
 
 initialized dbt project in new folder
+
 ```bash
 dbt init [foldername]
 ```
