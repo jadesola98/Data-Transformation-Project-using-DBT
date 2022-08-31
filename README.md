@@ -14,33 +14,36 @@ In this project I explored DBT in other to understand the nitty gritty and featu
 
 
 ## setup snowflake environment
-1. created roles, databases, schemas, datawarehouse and granted necessary permissions. The query used can be found in full_script.sql
+* created roles, databases, schemas, datawarehouse and granted necessary permissions. The query used can be found in full_script.sql
 
-2. ingested data into the raw database
+* ingested data into the raw database
 the data ingested was hardcoded. the query used can be found in full_script.sql
 
-3. installed dbt
+## installed/ setup dbt environment
 * created a folder for the project
 
 * created a virtual environment for my dbt project
 ```bash
 python -m venv dbt-env
 ```     
-
-activated the environment        
-dbt-env/scripts/activate       
-N.B: If you install dbt in a virtual environment, you need to reactivate that same virtual environment each time you create a shell window or session  
-
+* activated the environment
+```bash      
+dbt-env/scripts/activate
+```
+* installed dbt
+N.B: I used the snowflake adapter because I am working with snowflake database
+```bash
 pip install dbt-snowflake
-I used the snowflake adapter because I am working with snowflake database
-
-4. Initialized dbt project
+```
+* Initialized dbt project
 created a new folder
 
 initialized dbt project in new folder
+```bash
 dbt init [foldername]
+```
 
-configured profile for dbt project by inputting details that were prompted
+* configured profile for dbt project by inputting details that were prompted
 * dev credentials were used as default configuration
 * prod credentials were configured later in the profile.yml file 
 
