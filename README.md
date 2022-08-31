@@ -71,17 +71,17 @@ performed basic transformations such as creating id columns, changing data types
 
  
 
+## dbt commands used in the project
 
-
-deactivate to deactivate virtual environment
-dbt --version  check for version of dbt
-dbt debug to validate connection
-dbt clean clears out target file
-dbt run -s <name of models> to run specific models
-dbt run -s +<name of model> to run a model and all its dependencies
-dbt docs generate to generate documentation
-dbt dbt serve to visulize the documentation in the website
-dbt build to deploy the project sequentially
+* deactivate to deactivate virtual environment
+* dbt --version  check for version of dbt
+* dbt debug to validate connection
+* dbt clean clears out target file
+* dbt run -s <name of models> to run specific models
+* dbt run -s +<name of model> to run a model and all its dependencies
+* dbt docs generate to generate documentation
+* dbt dbt serve to visulize the documentation in the website
+* dbt build to deploy the project sequentially
 
 
 
