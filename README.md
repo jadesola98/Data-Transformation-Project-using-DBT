@@ -48,24 +48,26 @@ dbt init [foldername]
 ```
 
 * configured profile for dbt project by inputting details that were prompted
-* dev credentials were used as default configuration
-* prod credentials were configured later in the profile.yml file 
 
-5. Build project
-created two folders, one for staging (staging) and the other for warehouse and reporting (mart)
-created folders for the different schemas in the staging folder
+dev credentials were used as default configuration
+
+prod credentials were configured later in the profile.yml file 
+
+## Build project
+* created two folders, one for staging (staging) and the other for warehouse and reporting (mart)
+* created folders for the different schemas in the staging folder
 in each schema folder I declared sources in yaml files(src_fandango.yml & src_avengers.yml) for the schemas
-configured materialization and schema for staging, warehouse and reporting in dbt_project.yml file
-created a custom schema by using the macro "generate_schema_name"
-created staging models by referencing sources: 
+* configured materialization and schema for staging, warehouse and reporting in dbt_project.yml file
+* created a custom schema by using the macro "generate_schema_name"
+* created staging models by referencing sources: 
 performed basic transformations such as creating id columns, changing data types, harmonizing the name of columns, splitting columns e.t.c
-created warehouse and reporting models by referencing staging models
-editted database configuration in source files in other to deploy models in development environment to production environment
-deployed project to production environment by running dbt run --target prod
-created singular test and added it to test file
-created generic test to test for unique id columns and empty name columns by adding it to schema.yml file 
-created custom test to check if values in year columns are valid by creating a macro and adding it to the schema.yml file 
-generated documentation for project
+* created warehouse and reporting models by referencing staging models
+* editted database configuration in source files in other to deploy models in development environment to production environment
+* deployed project to production environment
+* created singular test and added it to test file
+* created generic test to test for unique id columns and empty name columns by adding the test it to schema.yml file 
+* created custom test to check if values in year columns are valid by creating a macro and adding it to the schema.yml file 
+* generated documentation for project
 
  
 
