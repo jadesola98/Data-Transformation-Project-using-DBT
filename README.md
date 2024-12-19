@@ -1,7 +1,7 @@
 
 # A DBT(DATA-BUILD-TOOL) Project
 
-In this project I explored DBT in other to understand the nitty gritty and features of dbt. I setup my cloud data platform - snowflake, installed dbt using pip, performed basic transformation in the staging database and modelled a few tables in the warehouse.
+In this project, I delved into DBT to gain a deeper understanding of its core functionalities and features. I set up my cloud data platform - snowflake, installed dbt using pip, performed basic transformation in the staging database and modelled a few tables in the warehouse.
 
 
 
